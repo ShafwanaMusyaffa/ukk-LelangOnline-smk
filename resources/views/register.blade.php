@@ -9,56 +9,56 @@
     <title>Register lelang</title>
 </head>
 <body>
-    <!-- Login -->
+    <!-- Hideline -->
+    <div class="text-light d-flex justify-content-center m-5">
+      <h1>Buat akun Terlebih dahulu !</h1>
+    </div>
     <!-- Section: Design Block -->
-<section class="card_register d-flex justify-content-center m-5">
+<section class="d-flex justify-content-center">
         <div class="col-lg-6 mb-5 mb-lg-0">
           <div class="card shadow-sm">
             <div class="card-body py-5 px-md-5">
               <form>
-                <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" id="form3Example1" class="form-control py-2" autofocus>
-                      <label class="form-label" for="form3Example1">First name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control py-2" />
-                      <label class="form-label" for="form3Example2">Last name</label>
-                    </div>
-                  </div>
+                <!-- Name input -->
+                <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example3">Name</label>
+                  <input type="name" id="form3Example3" class="form-control py-2" />
                 </div>
 
-                <!-- Email input -->
+                <!-- Username input -->
                 <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control py-2" />
-                  <label class="form-label" for="form3Example3">Email address</label>
+                <label class="form-label" for="form3Example3">Userame</label>
+                  <input type="username" id="form3Example3" class="form-control py-2" />
+                </div>
+
+                <!-- Notlpn input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3">Nomer Telepone</label>
+                  <input type="nomer telepone" id="form3Example3" class="form-control py-2" />
                 </div>
 
                 <!-- Password input -->
                 <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control py-2" />
                   <label class="form-label" for="form3Example4">Password</label>
+                  <input type="password" id="form3Example4" class="form-control py-2" />
                 </div>
 
-                <!-- Submit button -->
-                <div class="row">
+                <!-- Dropdown role input -->
+                <div class="input-group mb-4">
+                  <select class="form-select py-2" id="inputGroupSelect04" aria-label="Example select with button addon">
+                    <option selected>Choose...</option>
+                    <option value="1">Role One</option>
+                    <option value="2">Role Two</option>
+                    <option value="3">Role Three</option>
+                  </select>
+                </div>
 
-                    <button type="submit" class="btn btn-success btn-block mb-4 py-3">
-                      Sign up
-                    </button>
-                    <button type="back" class="btn border-3 border-success btn-block mb-4 py-3 text-success fw-bold">
-                      Back
-                    </button>
-
-                    <!-- Register buttons -->
-                    <div class="text-center">
-                      <p>masuk login</p>
-                    </div>
-                  
+                <!-- Submit & back button -->
+                <div class="container text-center">
+                  <div class="row gap-3">
+                      <button type="submit" class="col-sm btn btn-success btn-block mb-4 py-3">Sign up</button>
+                      <button type="back" class="col-sm btn border-3 border-success btn-block mb-4 py-3 text-success fw-bold">Back</button>
+                  </div>
                 </div>
               </form>
             </div>
