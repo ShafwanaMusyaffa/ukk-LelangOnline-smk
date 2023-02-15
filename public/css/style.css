@@ -1,7 +1,12 @@
 body {
     font-family: 'Alfa Slab One', cursive;
     font-family: 'Poppins', sans-serif !important;
+}
+.bg {
     background-image: url("../img/Background.png");
+}
+.logo {
+    font-family: 'Alfa Slab One';
 }
 
 .Hideline {
@@ -25,7 +30,7 @@ H1 {
     height: 100%;
 }
 
-@media (max-width: 450px){
+@media (max-height: 100px){
     .h-custom {
         height: 100%;
     }

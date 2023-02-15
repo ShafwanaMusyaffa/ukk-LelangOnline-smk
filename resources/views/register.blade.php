@@ -9,7 +9,7 @@
   </div>
     
   {{-- <!-- Register card --> --}}
-  <section class="d-flex justify-content-center">
+  <section class="d-flex justify-content-center py-4">
         <div class="col-lg-6 mb-1">
           <div class="card shadow-sm">
             <div class="card-body">

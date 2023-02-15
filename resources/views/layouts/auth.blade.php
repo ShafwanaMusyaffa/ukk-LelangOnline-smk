@@ -12,9 +12,7 @@
     <title>@yield('judul') lelang</title>
 </head>
 <body>
-    <div class="container-fluid">
-        @yield('app')
-    </div>
+    @yield('app')
     
     @include('includes.footer')
 
