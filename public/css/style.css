@@ -1,3 +1,32 @@
 body {
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Poppins', sans-serif !important;
     background-image: url("../img/Background.png");
+}
+
+.Hideline {
+    font-family: 'Alfa Slab One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 68px;
+    text-align: center;
+    color: #FFFFFF;
+    /* stroke: 3px solid #E98E14; */
+    text-shadow: 6px 8px 0px #E88D13;
+}
+
+H1 {
+    -webkit-text-stroke: 1px #E88D13;
+    -webkit-text-fill-color: white;
+}
+
+.h-custom {
+    height: 100%;
+}
+
+@media (max-width: 450px){
+    .h-custom {
+        height: 100%;
+    }
 }

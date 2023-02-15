@@ -1,81 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-    <title>Register lelang</title>
-</head>
-<body>
-    <!-- Login -->
-    <!-- Section: Design Block -->
-<section class="">
-  <!-- Jumbotron -->
-  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-image">
-    <div class="container">
-      <div class="row gx-lg-5 align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <h1 class="my-5 display-3 fw-bold ls-tight">
-            LELANG ONLINE<br />
-            <span class="text-primary">AMAN DAN TERPERCAYA</span>
-          </h1>
-          <p style="color: hsl(217, 10%, 50.8%)">
-            login dan buat akun terlebih dahulu untuk bisa mengikuti lelang
-          </p>
+@extends('layouts.auth')
+@section('judul', 'Login')
+
+@section('app')
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        {{-- Image --}}
+        <div class="col-md-9 col-lg-4">
+          <img src="{{ asset('') }}" class="img-fluid" alt="">
         </div>
-
-        <div class="col-lg-6 mb-5 mb-lg-0">
-          <div class="card">
-            <div class="card-body py-5 px-md-5">
-              <form>
-                <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" id="form3Example1" class="form-control" />
-                      <label class="form-label" for="form3Example1">First name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div class="form-outline">
-                      <input type="text" id="form3Example2" class="form-control" />
-                      <label class="form-label" for="form3Example2">Last name</label>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input type="email" id="form3Example3" class="form-control" />
-                  <label class="form-label" for="form3Example3">Email address</label>
-                </div>
-
-                <!-- Password input -->
-                <div class="form-outline mb-4">
-                  <input type="password" id="form3Example4" class="form-control" />
-                  <label class="form-label" for="form3Example4">Password</label>
-                </div>
-
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4 ">
-                  Sign up
-                </button>
-
-                <!-- Register buttons -->
-                <div class="text-center">
-                  <p>masuk login:</p>
-                  
-                </div>
-              </form>
-            </div>
+  
+        {{-- Login Card --}}
+        <div class="col-md-8 col-lg-5 offset-xl-1">
+            {{-- Headline --}}
+          <div class="Hideline text-light d-flex justify-content text-align-left py-3">
+            <h1>Login Terlebih dahulu !</h1>
           </div>
+          <div class="card shadow-sm">
+            <div class="card-body">
+                <form>
+                    {{-- <!-- Username input --> --}}
+                    <div class="form-floating mb-2">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="username">
+                        <label for="floatingInput">Username</label>
+                    </div>
+                    <p class="small mt-1 pt-1 fw-regular text-muted"><img
+                            src="{{ asset('icons/feather_BBBBBB/alert-circle.svg') }}"> Masukan
+                        username</p>
+
+                    {{-- <!-- Password input --> --}}
+                    <div class="form-floating mb-2">
+                        <input type="password" class="form-control" id="floatingInput"
+                            placeholder="password">
+                        <label for="floatingInput">Password</label>
+                    </div>
+                    <p class="small mt-1 pt-1 fw-regular text-muted"><img
+                            src="{{ asset('icons/feather_BBBBBB/alert-circle.svg') }}"> Password
+                        menggunakan huruf kapital </p>
+
+                    {{-- <!-- Login & Signe button --> --}}
+                    <div class="container text-center">
+                        <div class="row gap-2">
+                            <button type="submit"
+                                class="col-sm btn btn-success btn-block text-light mb-4 py-3 fw-bold">Login <img src="{{ asset('icons/feather_white/log-in.svg') }}"></button>
+                            <button type="back"
+                                class="col-sm btn btn-outline-success mb-4 py-3 fw-bold">Registrasi</button>
+                        </div>
+                        <p class="small mt-1 pt-1 fw-semibold">Already have an account?
+                            <a href="/login" class="link-success">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
+@endsection
