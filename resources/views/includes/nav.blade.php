@@ -1,7 +1,6 @@
 <!-- Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid justify-content-between m-3">
-        
+    <div class="container justify-content-between">
       <!-- Left elements -->
       <div class="d-flex">
         <!-- Brand -->
@@ -32,7 +31,7 @@
       <!-- Left elements -->
   
       <!-- Right elements -->
-      <ul class="navbar-nav flex-row">
+      <ul class="navbar-nav flex-row gap-3">
         <li class="nav-item me-3 me-lg-1">
           <a class="nav-link d-sm-flex align-items-sm-center" href="#">
             <img
@@ -42,11 +41,23 @@
               alt="Black and White Portrait of a Man"
               loading="lazy"
             />
-            <strong class="d-none d-sm-block ms-1">John</strong>
+            <strong class="d-none d-sm-block ms-1">Krisna Makmur</strong>
           </a>
         </li>
+        {{-- Button --}}
+        <li class="nav-item me-3 me-lg-1">
+          <button type=""
+            class="mybid_button btn btn-warning text-bg-warning btn-block text-warning  fw-bold"><img src="{{ asset('icons/feather_E88D13/coin-stack.svg') }}"><span class="ms-2">My Bid</span>
+          </button>
+        </li>
+        <li class="nav-item me-3 me-lg-1">
+          <button type=""
+           class="mybid_button btn btn-success btn-block text-warning  fw-bold"><img src="{{ asset('icons/feather_FFFFFF/log-out.svg') }}">
+          </button>
+        </li>
       </ul>
-        
+      {{-- Button --}}
+      
       <!-- Right elements -->
 
     </div>
