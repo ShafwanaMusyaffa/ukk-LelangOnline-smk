@@ -39,10 +39,9 @@
                               src="{{ asset('icons/feather_BBBBBB/alert-circle.svg') }}"> Password
                           menggunakan huruf kapital </p>
   
-                      {{-- <!-- Login & Signe button --> --}}
+                      {{-- <!-- Login & Sign button --> --}}
                       <div class="container text-center">
                           <div class="row gap-2">
-                              
                               <button type="submit"
                                   class="col-sm btn btn-success btn-block text-light mb-4 py-3 fw-bold">Login <img src="{{ asset('icons/feather_white/log-in.svg') }}"></button>
                               <button type="back"

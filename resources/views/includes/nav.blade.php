@@ -46,8 +46,7 @@
           </a>
         </li>
       </ul>
-
-      
+        
       <!-- Right elements -->
 
     </div>
