@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\barang;
-use App\Http\Requests\StorebarangRequest;
-use App\Http\Requests\UpdatebarangRequest;
+use Illuminate\Http\Request;
 
-class BarangController extends Controller
+class StaffController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +29,10 @@ class BarangController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorebarangRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorebarangRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -42,10 +40,10 @@ class BarangController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\barang  $barang
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(barang $barang)
+    public function show($id)
     {
         //
     }
@@ -53,10 +51,10 @@ class BarangController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\barang  $barang
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(barang $barang)
+    public function edit($id)
     {
         //
     }
@@ -64,11 +62,11 @@ class BarangController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatebarangRequest  $request
-     * @param  \App\Models\barang  $barang
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatebarangRequest $request, barang $barang)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +74,10 @@ class BarangController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\barang  $barang
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(barang $barang)
+    public function destroy($id)
     {
         //
     }

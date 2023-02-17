@@ -1,5 +1,5 @@
 <!-- Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top shadow-sm">
     <div class="container justify-content-between">
       <!-- Left elements -->
       <div class="d-flex">
@@ -35,29 +35,30 @@
         <li class="nav-item me-3 me-lg-1">
           <a class="nav-link d-sm-flex align-items-sm-center" href="#">
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
+              src="{{ asset('icons/feather_328D2A/user icon.svg') }}"
               class="rounded-circle"
               height="22"
               alt="Black and White Portrait of a Man"
               loading="lazy"
             />
-            <strong class="d-none d-sm-block ms-1">Krisna Makmur</strong>
+            <strong class="d-none d-sm-block ms-2">Nama akun</strong>
           </a>
         </li>
         {{-- Button --}}
         <li class="nav-item me-3 me-lg-1">
           <button type=""
-            class="mybid_button btn btn-warning text-bg-warning btn-block text-warning  fw-bold"><img src="{{ asset('icons/feather_E88D13/coin-stack.svg') }}"><span class="ms-2">My Bid</span>
+            class="mybid_button btn btn-warning text-bg-warning btn-block text-warning  fw-bold">
+            <img src="{{ asset('icons/feather_E88D13/coin-stack.svg') }}"><span class="ms-2">My Bid</span>
           </button>
         </li>
         <li class="nav-item me-3 me-lg-1">
           <button type=""
-           class="mybid_button btn btn-success btn-block text-warning  fw-bold"><img src="{{ asset('icons/feather_FFFFFF/log-out.svg') }}">
+           class="mybid_button btn btn-success btn-block text-warning fw-bold">
+           <img src="{{ asset('icons/feather_FFFFFF/log-out.svg') }}">
           </button>
         </li>
       </ul>
       {{-- Button --}}
-      
       <!-- Right elements -->
 
     </div>

@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer class="text-center text-lg-start bg-light text-muted border-top">
       <!-- Right -->
       <div>
         <a href="" class="me-4 text-reset">
