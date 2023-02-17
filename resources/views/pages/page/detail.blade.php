@@ -76,7 +76,7 @@
                     {{-- Date Time --}}
                     <td>06/11/2023  17:00:01 WIB</td>
                     {{-- Bid --}}
-                    <td> <img clas="" src="{{ asset('icons/feather_328D2A/ph_money.svg') }}"><span class="ms-1">RP.000</span></td>
+                    <td> <img clas="" src="{{ asset('icons/feather_328D2A/ph_money.svg') }}"><span class="ms-1">RP.2.000.000.00</span></td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
@@ -85,7 +85,7 @@
                     {{-- Date Time --}}
                     <td>06/11/2023  17:00:01 WIB</td>
                     {{-- Bid --}}
-                    <td> <img clas="" src="{{ asset('icons/feather_328D2A/ph_money.svg') }}"><span class="ms-1">RP.000</span></td>
+                    <td><img clas="" src="{{ asset('icons/feather_328D2A/ph_money.svg') }}"><span class="ms-1">RP.1.000.000.00</span></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
